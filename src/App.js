@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+// import ButtonCl from './ButtonCl/ButtonCl'
+// import ButtonFc from './ButtonFc/ButtonFc'
+import NavBar from './components/navbar/navbar'
+import Inicio from './components/ItemListContainer'
 
 function App() {
+  // const suma2 = (num) => {
+  //   console.log(num+2);
+  // }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hola Mundo!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <NavBar />
+        <Inicio />
+        {/* <ButtonCl text={'Soy nuevo boton'} color={'red'} padding={'35px'}/>
+        <ButtonFc> */}
+        {/* </ButtonFc>  */}
     </div>
   );
 }
