@@ -1,24 +1,19 @@
 import React, { Fragment } from 'react'
 import './button.css'
 
-const ButtonFc = ({text, color,padding,suma,children}) => {
+const ButtonFc = ({text, color,padding,children}) => {
+
+    console.log("children en ButtonFc", children);
 
     return(
-        // suma ?
         <Fragment>
-            <button className='radius' /* onClick={()=>suma(4)} */ style={{backgroundColor: color, color:'white', padding: padding}}>
+            <button className='radius' style={{backgroundColor: color, color:'white', padding: padding}}>
                 {text}
             </button>
             {children}
         </Fragment>
-        /*:
-        <Fragment>
-            <button onClick={()=>suma(4)} style={{backgroundColor: color, color:'white', padding: padding}}>
-                {text}
-            </button>
-        {children}
-        </Fragment> */
     );
 }
+// Ciclo de vida en componentes (pregunta de trabajo)
 
 export default ButtonFc

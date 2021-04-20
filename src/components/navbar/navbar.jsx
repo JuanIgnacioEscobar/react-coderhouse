@@ -2,6 +2,7 @@
 import React, { Fragment } from 'react';
 import './navbar.css'
 import logo from './logo_zapa.png'
+import CartWidget from './CartWidget'
 // los parentesis sirven cuando el componente no requiere funciones o variables
 const NavBar = () => ( //Las variables/funciones van antes del return
         <Fragment>
@@ -13,6 +14,7 @@ const NavBar = () => ( //Las variables/funciones van antes del return
                                 <li><a href="#">Sobre nosotros</a></li>
                                 <li><a href="#">Contacto</a></li>
                                 <li><a href="#">Carrito</a></li>
+                                <li><a href="#"><CartWidget /></a></li>
                         </ul>
                 </nav>
         </Fragment>

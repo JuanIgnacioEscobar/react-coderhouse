@@ -4,6 +4,9 @@ import './App.css';
 // import ButtonFc from './ButtonFc/ButtonFc'
 import NavBar from './components/navbar/navbar'
 import Inicio from './components/ItemListContainer'
+import Name from './components/Name/name'
+import Hok from './promesas/hook'
+import Prueba from './components/ejercicio/pruebas'
 
 function App() {
   // const suma2 = (num) => {
@@ -14,6 +17,9 @@ function App() {
     <div className="App">
         <NavBar />
         <Inicio />
+        <Name nombre='SD'/>
+        <Hok />
+        <Prueba />
         {/* <ButtonCl text={'Soy nuevo boton'} color={'red'} padding={'35px'}/>
         <ButtonFc> */}
         {/* </ButtonFc>  */}
