@@ -3,10 +3,12 @@ import './App.css';
 // import ButtonCl from './ButtonCl/ButtonCl'
 // import ButtonFc from './ButtonFc/ButtonFc'
 import NavBar from './components/navbar/navbar'
-import Inicio from './components/ItemListContainer'
-import Name from './components/Name/name'
-import Hok from './promesas/hook'
-import Prueba from './components/ejercicio/pruebas'
+// import Inicio from './components/ItemListContainer'
+import ItemListContainer from './DesafioMapPromises/ItemListContainer'
+// import ItemList from './DesafioMapPromises/ItemList';
+// import Name from './components/Name/name'
+// import Hok from './promesas/hook'
+// import Prueba from './components/ejercicio/pruebas'
 
 function App() {
   // const suma2 = (num) => {
@@ -15,11 +17,12 @@ function App() {
 
   return (
     <div className="App">
-        <NavBar />
-        <Inicio />
-        <Name nombre='SD'/>
-        <Hok />
-        <Prueba />
+        <NavBar />        
+        {/* <Inicio /> */}
+        <ItemListContainer />
+        {/* <Name nombre='SD'/> */}
+        {/* <Hok /> */}
+        {/* <Prueba /> */}
         {/* <ButtonCl text={'Soy nuevo boton'} color={'red'} padding={'35px'}/>
         <ButtonFc> */}
         {/* </ButtonFc>  */}

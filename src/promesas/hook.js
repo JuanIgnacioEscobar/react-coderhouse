@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
+import Name2 from './name2'
 
 export default function Hok() {
-    
-    const [numero, setNumero] = useState(3)
 
-    const handleNumero = () => { //se considera buena practica crear un handle para no hacer todo en una misma linea, siempre se hace con arrow
-        setNumero(numero+1)
+    const [nombre, setNombre] = useState(0)
+
+    const handleName = () => {
+        setNombre(nombre + 1)
     }
 
     return(
-        <div>
-            <h1>Encuentro {numero}</h1>
-            <button onClick={handleNumero}>CHANGE NUM</button>
-        </div>
-    )
+    <React.Fragment>
+        <Name2 nombre={'CODERHOUSE'}/>
+        <button onClick={handleName}>CHANGE NAME2</button>
+    </React.Fragment>
+    );
 }
