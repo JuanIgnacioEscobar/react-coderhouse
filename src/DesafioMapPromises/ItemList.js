@@ -11,7 +11,7 @@ const ItemList = ({productos}) => {
                 {
                     productos.map((dato) =>
                     <div key={dato.id}>
-                        <Item img={dato.img} title={dato.title} precio={dato.precio} />
+                        <Item img={dato.img} title={dato.title} precio={dato.precio} stock={dato.stock} />
                     </div>
                     )
                 }
